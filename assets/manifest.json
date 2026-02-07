@@ -1,0 +1,19 @@
+{
+    "name": "CSSVariables",
+    "description": "",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "js": ["content/index.js"],
+            "css": ["main.css"],
+            "matches": ["*://*/*"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage"
+    ]
+}

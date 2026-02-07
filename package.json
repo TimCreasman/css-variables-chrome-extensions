@@ -1,0 +1,19 @@
+{
+    "name": "css-variables-chrome-extension",
+    "type": "module",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "dev": "tsc && ./build.js -d",
+        "build": "npx tsc && ./build.js"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.232",
+        "esbuild": "^0.17.17",
+        "esbuild-css-modules-plugin": "^2.7.1",
+        "esbuild-plugin-copy": "^2.1.1",
+        "execa": "^9.6.1",
+        "typescript": "^5.0.4",
+        "typescript-plugin-css-modules": "^5.0.1"
+    }
+}

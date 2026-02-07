@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "noEmit": true,
+        "importHelpers": true,
+        "baseUrl": "./src",
+        "target": "ES2021",
+        "useDefineForClassFields": false,
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "esnext",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "plugins": [{ "name": "typescript-plugin-css-modules" }]
+    }
+}

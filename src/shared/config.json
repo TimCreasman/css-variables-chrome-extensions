@@ -1,0 +1,6 @@
+{
+    "test" : {
+        "value": 400,
+        "inputType": "number"
+    }
+}
