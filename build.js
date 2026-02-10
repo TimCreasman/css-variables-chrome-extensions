@@ -28,7 +28,16 @@ async function build() {
     }
 
     await esbuild.build(config);
+
     await execa`cp -a assets/. dist/`;
+
+    // Switch the manifest used
+    if (isDev) {
+        await execa`rm dist/manifest.json`;
+        await execa`mv dist/manifest.dev.json dist/manifest.json`;
+    } else {
+        await execa`rm dist/manifest.dev.json`;
+    }
 }
 
 build().catch((err) => {
