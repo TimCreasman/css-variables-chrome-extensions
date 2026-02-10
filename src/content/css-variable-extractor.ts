@@ -1,5 +1,3 @@
-import { IMessager } from "shared/messager";
-
 export type CSSVariable = [`--${string}`, `#${string}` | `rgb${string}`]
 
 export class CSSVariableExtractor {
