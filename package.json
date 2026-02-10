@@ -9,6 +9,8 @@
     },
     "devDependencies": {
         "@types/chrome": "^0.0.232",
+        "chai": "^6.2.2",
+        "cypress": "^15.10.0",
         "esbuild": "^0.17.17",
         "esbuild-css-modules-plugin": "^2.7.1",
         "esbuild-plugin-copy": "^2.1.1",

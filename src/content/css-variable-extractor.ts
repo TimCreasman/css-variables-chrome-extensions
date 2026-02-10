@@ -7,9 +7,10 @@ export class CSSVariableExtractor {
     /**
      * Fetches all color related properties from this domain's stylesheets.
      **/
-    public static extract = () => {
-        const domainStyleSheets = [...document.styleSheets]
+    public static extract = (styleSheets: StyleSheetList) => {
+        const domainStyleSheets = [...styleSheets]
             .filter(this.isSameDomain);
+        debugger;
 
         return domainStyleSheets
             .reduce<CSSVariable[]>((arr, sheet: CSSStyleSheet) => arr.concat(
